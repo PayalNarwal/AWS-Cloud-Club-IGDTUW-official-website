@@ -1,7 +1,102 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+body {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* line-height: 0.8; */
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  margin-left: 41%;
+}
+
+.blogs-flexbox{
+  display:flex;
+  margin: 2em 10% 2em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blogs-card{
+  background-color: #f2f2f2;
+  width: 30%;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.blogs-card img {
+  width: 100%;
+}
+
+.blogs-card h1 {
+  margin-left: 5%;
+  width: fit-content;
+}
+
+.blogs-subheading {
+  display: flex;
+  justify-content: space-between;
+}
+.blogs-subheading div {
+  display: inline-block;
+}
+blogs p{
+  width: 80%;
+}
+
+
+blogs a {
+  text-decoration: none;
+  padding: 0 5% 1rem; 
+}
+
+.blogs-left-align {
+  padding: 0 5% 5%;
+}
+.blogs-green {
+  color: #2dbcac
+}
+
+
+@media only screen and (max-width: 768px) {
+  .blogs-flexbox {
+    display: block;
+    margin: 0 10%;
+  }
+  .blogs-card {
+    width: 100%;
+    margin-bottom: 2rem;
   }
   
+  .blogs-card h1 {
+    text-align: center;
+  }
+  .blogs-subheading {
+    justify-content: center;
+  }
+  .blogs-subheading div {
+    padding: 1rem; 
+  }
   
+  blogs a{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blogs-subheading {
+    display: block;
+    text-align: center;
+
+  }
+  .blogs-subheading div {
+    padding: 0.25rem; 
+    display: block;
+  }
+/*   a {
+    text-align:center;
+  } */
+}
