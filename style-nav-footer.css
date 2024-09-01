@@ -17,9 +17,7 @@
     z-index: 1000; /* Assign a high z-index value */
   }
   
-  .event-page .navbar {
-    background-color: transparent;
-  }
+  
   
   .navbar .nav-left {
     text-align: center;
