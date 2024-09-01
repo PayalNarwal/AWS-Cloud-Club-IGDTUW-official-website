@@ -1,0 +1,171 @@
+
+
+/* General body styling */
+body {
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;/*#DAEAF9;*/
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:white;/*#DAEAF9;*/
+    color: #fff;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color : #1c1678;
+}
+
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color : black;
+}
+
+/* Text container styling */
+.text-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.text-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.text-container p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Slider container styling */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Slider styling */
+.slider {
+    width: 400px; /* Reduced width */
+    height: 300px; /* Reduced height */
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+    border: 2px solid #333; /* Border for the box */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider img:first-child {
+    z-index: 1;
+}
+
+.slider img:nth-child(2) {
+    z-index: 0;
+}
+
+.navigation-button {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Slider styling */
+.slider {
+    width: 600px; /* Reduced width */
+    height: 400px; /* Reduced height */
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+    border: 2px solid #333; /* Border for the box */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider img:first-child {
+    z-index: 1;
+}
+
+.slider img:nth-child(2) {
+    z-index: 0;
+}
+
+.navigation-button {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}

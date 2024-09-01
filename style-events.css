@@ -3,3 +3,171 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  font-family: 'Baloo Bhai 2', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+  overflow-x: hidden; 
+  width: 100vw;
+}
+
+
+/* Slider Styles */
+#slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+#slider .container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+#slider .slide {
+  min-width: 100%;
+  transition: 1s;
+  display: flex;
+}
+
+#slider .item {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+
+
+
+
+/* Events Section */
+.h1{
+  margin-top: 50px;
+}
+.events-section {
+  padding: 20px;
+  background-color: #94b0c9;
+}
+
+.events-section h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color:#1c1678;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Image Slider */
+.imgslider-container {
+  position: relative;
+  max-width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.imgslider {
+  display: flex;
+  overflow: hidden;
+  height: 600px; /* Adjust the height as needed */
+}
+
+.imgslider img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures images cover the area without distortion */
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+.navigation-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.navigation-button .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.navigation-button .dot.active {
+  background-color: #717171;
+}
+
+/* Text Container */
+.text-container {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+  word-spacing: normal;
+  line-height: 1.5;
+}
+
+/* Card Container */
+.cardcontainer {
+  padding: 20px;
+}
+
+.cardcontainer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardcontainer .card {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 20px;
+  flex: 1;
+  max-width: 350px;
+  max-height: 900px
+
+}
+
+.card .thumbnail-container {
+  height: 350px;
+  overflow: hidden;
+}
+
+.card .thumbnail-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the entire image is visible without distortion */
+  transition: transform 0.5s ease-in-out;
+}
+
+.card .thumbnail-container img:hover {
+  transform: scale(1.1);
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 10px;
+  text-align: center;
+  line-height: 1.6;
+  word-spacing: normal;
+            
+}
+
+.card p {
+  padding: 0 10px 10px;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  
+            
+}

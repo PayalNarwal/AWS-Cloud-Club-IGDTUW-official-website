@@ -1,0 +1,98 @@
+root {
+    --light-blue: #94b0c9;
+    --dark-blue: #1c1678;
+    --black-color: black;
+    /* Background */
+    --white-color: white;
+    --off-white-color: #f2f2f2;
+    --off-blue-color: #daeaf9;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eaeaea;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#1c1678;
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.row.center {
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    width: 300px;
+    height: 510px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 50px; /* Added for spacing between cards */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures no space below the image */
+}
+
+.thumbnail-container {
+    width: 100%;
+    height: auto; /* Set the desired height for the thumbnail container */
+    overflow: hidden;
+}
+
+.thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.card h2 {
+    padding: 15px;
+    margin: 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.card p {
+    padding: 0 15px 15px 15px;
+    margin: 0;
+    color: #555;
+    font-family: "Poppins", sans-serif;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+

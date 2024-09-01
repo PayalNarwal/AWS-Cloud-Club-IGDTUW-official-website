@@ -1,32 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWS Cloud Club IGDTUW</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style-nav.css" />
-    <link rel="stylesheet" href="./style-events.css" />
-    <link rel="stylesheet" href="./style-footer.css" />
-  </head>
-  <body>
-    <!-- Nav Bar - (Payal)  -->
-    <div class="navbar sidebarMenu" id="navbar">
-      <div class="nav-left">
-        <h3>AWS Cloud Club</h3>
-        <h3>IGDTUW</h3>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Cloud Club IGDTUW Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style-nav-footer.css">
+  <link rel="stylesheet" href="./style-events.css">
+</head>
+<body class="event-page">
+  <!-- Nav Bar - (Payal) -->
+  <div class="navbar sidebarMenu" id="navbar">
+    <div class="nav-left">
+      <img src="assets/events/Frame 15.png" style="filter: grayscale(50%)" height="150" />
+    </div>
+    <div class="nav-right">
+      <a href="./index.html">Home</a>
+      <a href="./events.html">Events</a>
+      <a href="./blogs.html">Blogs</a>
+      <a href="#">Contact us</a>
+    </div>
+  </div>
+  <!-- Nav Bar end -->
+
+  <main>
+    <!-- Slider starts -->
+    <section id="slider">
+      <div class="container">
+        <div class="slide">
+          <div class="item" style="background-image: url('assets/events/01.jpg');"></div>
+          <div class="item" style="background-image: url('assets/events/03.jpg');"></div>
+          <div class="item" style="background-image: url('assets/events/07.jpg');"></div>
+          <div class="item" style="background-image: url('assets/events/11.jpg');"></div>
+          <div class="item" style="background-image: url('assets/events/14.jpg');"></div>
+        </div>
       </div>
-      <div class="nav-right">
-        <a href="./index.html">Home</a>
-        <a href="./events.html">Events</a>
-        <a href="#">Blogs</a>
-        <a href="#">Contact us</a>
+    </section>
+    <!-- Slider ends -->
+
+    <!-- Events Section -->
+    <section id="aws-society-events" class="events-section">
+      <h1>AWS Community Day</h1>
+      <div class="imgslider-container">
+        <div class="imgslider">
+          <img id="img-1" src="assets/events/event1.jpg" alt="Image 1"/>
+          <img id="img-2" src="assets/events/event3.jpg" alt="Image 2"/>
+          <img id="img-3" src="assets/events/event5.jpg" alt="Image 3"/>
+          <img id="img-4" src="assets/events/event8.jpg" alt="Image 4"/>
+        </div>
+        <div class="navigation-button">
+          <span class="dot active" onclick="changeSlide(0)"></span>
+          <span class="dot" onclick="changeSlide(1)"></span>
+          <span class="dot" onclick="changeSlide(2)"></span>
+          <span class="dot" onclick="changeSlide(3)"></span>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>The success of 'The Student Community Day' organized by the AWS Cloud Club Society was beyond measure! With an impressive lineup of speakers like Jen Looper, Aditi Sawhney, Varsha Verma, Kristine Howard, Gargee Bhatnagar, Omshree Bhutani, Payal Gupta, and Rajani, covering diverse topics ranging from career pathways to advanced AWS Cloud practices, the event garnered immense interest and engagement from attendees. Participants left feeling inspired, equipped with valuable knowledge, and motivated to pursue their goals in cloud computing and beyond. The positive feedback received from attendees, coupled with the insightful discussions and networking opportunities, underscored the event's resounding success in empowering students and fostering a vibrant community of learning and growth.</p>
+      </div>
+
+      <div class="cardcontainer">
+        <h1>AWS Cloud Club Events</h1>
+        <div class="row">
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="assets/events/event1.jpg" alt="Event 1">
+            </div>
+            <h2>AWS - Cloud Club Orientation</h2>
+            <p>Gaurav Garg's AWS orientation emphasized service utilization, memory management, security enhancement, virtual memory, and resource optimization for effective AWS application.</p>
+          </div>
+          <div class="card">
+            <a href="https://www.youtube.com/watch?v=L75f0zKAYgQ" target="_blank">
+              <div class="thumbnail-container">
+                <img id="video-thumbnail" src="assets/events/event2.png" alt="Video Thumbnail">
+              </div>
+            </a>
+            <h2>Exploring IOT with AWS</h2>
+            <p>Sukritee Sharma's IoT session showcased AWS's potential, offering industry insights and practical wisdom for IoT innovation, leaving attendees inspired and equipped for ventures.</p>
+          </div>
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="assets/events/event3.jpg" alt="Event 3">
+            </div>
+            <h2>AWS DeepRacer</h2>
+            <p>Sukriti Sharma and Arushi Garg led an AWS DeepRacer event, guiding participants in building autonomous racecars, emphasizing hands-on learning and AI's racing potential.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="assets/events/event4.jpg" alt="Event 4">
+            </div>
+            <h2>Club Interaction with Juniors</h2>
+            <p>IGDTUW's AWS Cloud Club hosted a meet-up for mingling and Q&A, offering insights into club benefits and kickstarting students' AWS journey.</p>
+          </div>
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="assets/events/event5.jpg" alt="Event 5">
+            </div>
+            <h2>AWS Cloud Infrastructure Camp</h2>
+            <p>At the Infrastructure Camp, Ayush Kumar, an AWS Solutions Architect, shared expertise on cloud architecture optimization, empowering attendees with strategies for seamless scalability.</p>
+          </div>
+          <div class="card">
+            <a href="https://www.youtube.com/watch?v=FmK6tMoZ5aA" target="_blank">
+              <div class="thumbnail-container">
+                <img id="video-thumbnail" src="assets/events/event6.png" alt="Video Thumbnail">
+              </div>
+            </a>
+            <h2>DevOps on AWS</h2>
+            <p>Amritha Shetty's "DevOps on AWS" event empowered attendees with insights into AWS's role in streamlining development processes, fostering innovation, and equipping them for effective DevOps implementation.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card">
+            <a href="https://www.youtube.com/watch?v=og5Wyr6LRUU" target="_blank">
+              <div class="thumbnail-container">
+                <img id="video-thumbnail" src="assets/events/event7.png" alt="Video Thumbnail">
+              </div>
+            </a>
+            <h2>Backend Development on AWS for Frontend Engineers</h2>
+            <p>Ms.Ali Spittel's webinar empowered frontend engineers to delve into backend development on AWS, covering data modeling, backend app creation, and AWS Lambda mastery.</p>
+          </div>
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="assets/events/event8.jpg" alt="Event 8">
+            </div>
+            <h2>Real AWS</h2>
+            <p>"REAL AWS: GET YOU ON CLOUD 9" event, led by Ish Kapoor, explored practical AWS applications like product management, software development, and API development, offering knowledge enrichment and certificates.</p>
+          </div>
+          <div class="card">
+            <div class="thumbnail-container">
+              <img src="assets/events/event9.jpg" alt="Event 9">
+            </div>
+            <h2>Resume Building with AWS</h2>
+            <p>IGDTUW Cloud Club's "Resume Building with AWS" event guided participants in crafting standout resumes, leveraging AWS projects to enhance skills and career prospects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="icons">
+      <a href="https://twitter.com/AWSClubIGDTUW" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/aws-cloud-club-igdtuw/" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="http://www.youtube.com/@AWSClubIGDTUW" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.meetup.com/aws-cloud-club-igdtuw/" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-meetup"></i></a>
+      <a href="https://www.instagram.com/awscloudclubigdtuw/" target="_blank" rel="noopener noreferrer" class="icon"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="email">
+      <h4>Email us:</h4>
+      <div class="id">
+        <a href="mailto:awsclubigdtuw@gmail.com "><h4>awsclubigdtuw@gmail.com</h4></a>
       </div>
     </div>
-  </body>
+    <div class="copyright">
+      <h5>
+        © 2024 Copyright: AWS Cloud Club, IGDTUW.<br>
+        All rights reserved.
+      </h5>
+    </div>
+  </footer>
+  <!--Footer ends-->
+
+  <script src="event.js"></script>
+</body>
 </html>
