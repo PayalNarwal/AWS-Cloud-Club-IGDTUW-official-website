@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Cloud Club Contact</title>
+<style>
+    :root {
+        --light-blue: #94b0c9;
+        --black-color: black;
+        --white-color: white;
+        --off-white-color: #f2f2f2;
+        --off-blue-color: #daeaf9;
+      }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #daeaf9;
+  color: #94b0c9;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+    color: var(--black-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  height:32vh;
+}
+
+.contact-card {
+  background-color: var(--off-white-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  text-align: center;
+}
+
+.contact-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.contact-card h3 {
+  color: #333;
+  
+}
+
+.contact-card p {
+    margin-bottom: 2px;
+}
+
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#message{
+    height:8vh;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid var(--light-blue);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+input[type="text"] {
+    width: 150px;
+  }
+  
+  input[type="email"] {
+    width: 300px;
+  }
+
+button[type="submit"] {
+  background-color: var(--light-blue);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--dark-blue);
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+
+.social-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--off-white-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+.social-link i {
+  font-size: 24px;
+  color: var(--dark-blue);
+  margin-right: 10px;
+}
+
+.social-link p {
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--dark-blue);
+  color: var(--white-color);
+  padding: 1rem;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.contact-card .logo {
+            width: 20px; /* Adjust the width as needed */
+            height: auto;
+            vertical-align: middle;
+            margin-left: 0px; /* Adjust the spacing as needed */
+            border-radius: 0%;
+        }
+
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Contact Us</h1>
+</header>
+
+<main>
+  <div class="container">
+    <p>If you have any questions or need assistance, feel free to reach out to us. Our team is here to help you with your AWS Cloud Club needs:</p>
+
+    <div class="contact-info">
+      <div class="contact-card">
+        <img src="assets/payal.jpg" alt="Technical Lead">
+        <h3>Payal Narwal (Technical Lead)</h3>
+        <p>Email: <a href="mailto:Payal.narwal2003@gmail.com">Payal.narwal2003@gmail.com</a></p>
+        <a href="https://www.linkedin.com/in/payalnarwal/" style="color:#0A66C2;">Linked</a>
+        <img class="logo" src="/assets/linkedIn_logo.png" alt="Logo" style="vertical-align: middle;">
+      </div>
+      <div class="contact-card">
+        <img src="assets/muskan.jpg" alt="Technical Coordinator">
+        <h3>Muskan Singh (Technical Coordinator)</h3>
+        <p>Email: <a href="mailto:muskan.s.del@gmail.com">muskan.s.del@gmail.com</a></p>
+        <a href="https://www.linkedin.com/in/muskan-singh-83828b239/" style="color:#0A66C2;">Linked</a>
+        <img class="logo" src="/assets/linkedIn_logo.png" alt="Logo" style="vertical-align: middle;">
+
+      </div>
+    </div>
+
+    <h2>Contact Form</h2>
+
+    <div class="contact-form">
+      <form action="submit_form.php" method="post">
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <h2>Other Ways to Connect</h2>
+
+    <div class="social-links">
+      <div class="social-link">
+        <i class="fab fa-facebook-f"></i>
+        <p>Stay updated with our latest news and events by following us on Facebook. </p>
+      </div>
+      <div class="social-link">
+        <i class="fab fa-linkedin-in"></i>
+        <p>Get the latest tips on AWS Cloud and more by following us on LinkedIn <a href="https://www.linkedin.com/company/aws-cloud-club-igdtuw/mycompany/" target="_blank">AWS Cloud Club LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Add FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+    function sendEmail() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+    
+        var mailtoLink = 'mailto:Payal.narwal2003@gmail.com'
+                       + '?subject=' + encodeURIComponent('Contact Form Submission from ' + name)
+                       + '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+    
+        window.location.href = mailtoLink;
+    }
+    </script>
+
+</body>
+</html>
