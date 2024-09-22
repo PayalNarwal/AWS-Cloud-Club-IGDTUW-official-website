@@ -527,8 +527,6 @@ body {
 }
 
 .faq-question:hover {
-  /* background-color: #94b0c97c; */
-  opacity: 0.5;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -580,12 +578,12 @@ body {
 
 @media (max-width: 480px) {
   .faq-question {
-    width: 80%;
-    font-size: 0.8rem;
+    width: 85%;
+    font-size: 1rem;
   }
   .faq-answer {
-    width: 80%;
-    font-size: 0.6rem;
+    width: 85%;
+    font-size: 0.8rem;
   }
 
 }
