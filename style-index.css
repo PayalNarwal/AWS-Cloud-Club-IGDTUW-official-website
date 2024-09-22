@@ -49,6 +49,7 @@ body {
   background-image: url('./assets/Hero/bg.jpg');
   background-size: cover;
   background-position: center;
+  /* background-color: rgba(117, 117, 117); */
   width: 100%;
   height: 100%;
   filter: grayscale(30%); 
@@ -526,9 +527,10 @@ body {
 }
 
 .faq-question:hover {
-  background-color: #94b0c97c;
+  /* background-color: #94b0c97c; */
   opacity: 0.5;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .faq-question {
@@ -550,13 +552,14 @@ body {
   content: "+";
   position: absolute;
   right: 0;
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 1;
   transition: transform 0.2s ease-in-out;
 }
 
 
 .faq-answer {
+  color: rgb(61, 61, 61);
   margin: 20px auto;
   line-height: 1.4;
   max-height: 0;
@@ -574,4 +577,16 @@ body {
   transform: rotate(45deg);
 }
 
+
+@media (max-width: 480px) {
+  .faq-question {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .faq-answer {
+    width: 80%;
+    font-size: 0.6rem;
+  }
+
+}
 
